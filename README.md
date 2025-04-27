@@ -4,6 +4,12 @@ This is a full-stack web application built with **ASP.NET Core** and **C#**. It 
 
 This web app demonstrates key **full-stack development skills** using **ASP.NET Core**, including building and structuring a **RESTful API**, working with **data transfer objects**, and integrating the back-end with a pre-built front-end. The project also emphasizes best practices in software design, such as **dependency injection**, **asynchronous programming**, and using **Entity Framework Core** for data access.
 
+## Screenshots
+
+![](/images/list-games-screen.png)
+![](/images/edit-game-screen.png)
+![](/images/new-game-screen.png)
+
 ## Key Concepts & Technologies Used
 
 - **REST API**: Developed a RESTful API to handle HTTP requests and serve as the back-end of the web app, ensuring a robust and scalable architecture.
