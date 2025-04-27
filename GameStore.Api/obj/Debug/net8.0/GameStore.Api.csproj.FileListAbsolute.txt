@@ -48,3 +48,4 @@
 /home/gabron/Desktop/gamestore/GameStore.Api/obj/Debug/net8.0/GameStore.Api.pdb
 /home/gabron/Desktop/gamestore/GameStore.Api/obj/Debug/net8.0/GameStore.Api.genruntimeconfig.cache
 /home/gabron/Desktop/gamestore/GameStore.Api/obj/Debug/net8.0/ref/GameStore.Api.dll
+/home/gabron/Desktop/gamestore/GameStore.Api/obj/Debug/net8.0/GameStore.Api.sourcelink.json
