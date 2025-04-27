@@ -1,25 +1,49 @@
 {
     "version": "0.2.0",
+    "compounds": [
+        {
+            "name": "Run API and Frontend",
+            "configurations": [
+                "Launch API",
+                "Launch Frontend"
+            ],
+            "preLaunchTask": "build-all"
+        }
+    ],
     "configurations": [
         {
-            "name": ".NET Core Launch (web)",
+            "name": "Launch API",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
             "program": "${workspaceFolder}/GameStore.Api/bin/Debug/net8.0/GameStore.Api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/GameStore.Api",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development",
-                "PATH": "${env:PATH}:${env:HOME}/.dotnet:${env:HOME}/.dotnet/tools"
+                "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
+                "/Views": "${workspaceFolder}/GameStore.Api/Views"
+            }
+        },
+        {
+            "name": "Launch Frontend",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/GameStore.Frontend/bin/Debug/net8.0/GameStore.Frontend.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/GameStore.Frontend",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
             }
         }
     ]
